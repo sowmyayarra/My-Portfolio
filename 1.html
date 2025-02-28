@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     body {
+    background-image: url('port.jpg'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+        .profile img {
+            width: 150px;  /* Set a fixed width */
+            height: 150px; /* Set the same height to make it a square */
+            object-fit: cover; /* Ensures the image fills the square without distortion */
+            border-radius: 10px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            display: inline;
+            background: #008cba;
+            color: white;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .BIO {
+            margin: 20px;
+        }
+        .bio {
+            background: white;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects {
+            margin: 20px;
+        }
+        .project {
+            background: white;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: #008cba;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <br>
+    <section class="profile">
+        <img src="Sowmi.jpg" alt="Student Picture">
+        <h2>YARRA LAKSHMI SOWMYA SRI</h2>
+        <p>BTech Student | Web Developer | Full Stack Developer</p>
+    </section>
+    <section class="BIO">
+        <h2>About me</h2>
+        <div class="bio">
+            <h3>Bio</h3>
+            <p>"I am a BTech student passionate about software development, web development, and AI-driven solutions. Skilled in programming languages like C and Python, along with front-end technologies such as HTML and CSS, I enjoy building functional and user-friendly applications. I have worked on projects like a simple calculator and a responsive landing page, demonstrating my ability to create efficient and visually appealing solutions. With a strong foundation in both logic and design, I am eager to explore innovative technologies and contribute to impactful projects in the tech industry."</p>
+        </div>
+    <section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Simple Calculator</h3>
+            <p>"I built a simple yet efficient calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Designed with a clean and user-friendly interface, this project is a great example of how fundamental programming concepts can be applied to create practical solutions. Built using  e.g. HTML/CSS, JavaScript, this calculator is a stepping stone towards more advanced projects in software development!"</p>
+        </div>
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>"A modern, responsive, and visually appealing landing page designed to captivate visitors at first glance. With a user-friendly interface, smooth navigation, and a clean layout, it delivers an engaging experience across all devices. Built using [mention technologies like HTML, CSS, JavaScript, this landing page is optimized for performance and accessibility. Whether for a business, portfolio, or personal project, it serves as the perfect gateway to your brand or service!"</p>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
